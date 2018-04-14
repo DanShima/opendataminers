@@ -117,10 +117,8 @@
             <i class="large material-icons">mode_edit</i>
           </a>
           <ul>
-            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            <li><a class="btn-floating red"><i class="material-icons">call</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">reorder</i></a></li>
           </ul>
         </div>
 
@@ -140,6 +138,14 @@
       // This example requires the Drawing library. Include the libraries=drawing
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
+
+       var elem = document.querySelector('.fixed-action-btn');
+        var instance = M.FloatingActionButton.init(elem, {
+          direction: 'left'
+      });
+
+      instance.open();
+
 
       function getLatLngs() {
       	const arr = [];
