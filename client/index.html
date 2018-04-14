@@ -37,7 +37,10 @@
       }
       .container {
         display: inline;
-
+      }
+      span {
+        font-weight: 400;
+        color:white;
       }
 
     </style>
@@ -52,19 +55,35 @@
 	      </div>
 	      <div class="col s4">
 
-	      	<button type="button" class="btn btn-default" onclick="submitToserver()">Default</button>
-	      	 <!-- Switch -->
-			    <label> Health!</label>
-				  <div class="switch">
-				    <label>
-				      Off
-				      <input type="checkbox">
-				      <span class="lever"></span>
-				      On
-				    </label>
-				  </div>
-	      </div>
-	    </div>
+           <!-- Form -->
+           <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Health</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Public Transport Disruption</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"/>
+                <span>Road Construction</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"/>
+                <span>Crime</span>
+              </label>
+            </p>
+          </form>
+
+      <button type="button" class="btn btn-default" onclick="submitToserver()">Default</button>
      </div>
 
 
