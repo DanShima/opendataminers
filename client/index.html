@@ -53,6 +53,19 @@
         display:block;
         margin-top: 30px;
       }
+      .waves-effect {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    height: 100vh;
+      }
 
     </style>
   </head>
@@ -118,18 +131,19 @@
           </a>
           <ul>
             <li><a class="btn-floating red"><i class="material-icons">call</i></a></li>
-            <li><a class="btn-floating blue modal-trigger" href="#modal1"><i class="material-icons">reorder</i></a></li>
-            <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
-    </div>
+            <li><a class="btn-floating blue modal-trigger" href="#modal1"><i class="material-icons">reorder</i></a>
+            </li>
           </ul>
+             <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+          <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
         </div>
 
      </div>
@@ -153,14 +167,14 @@
         var instance = M.FloatingActionButton.init(elem, {
           direction: 'left'
       });
-
-       var elemModal = document.querySelector('.modal');
-      var instance2 = M.Modal.init(elemModal, options);
-      instance2 = M.Modal.getInstance(elem);
-
-
       instance.open();
 
+      var elemModal = document.querySelector('.modal');
+      var instance2 = M.Modal.init(elemModal, {
+        opacity: 0.1
+      });
+      instance2 = M.Modal.getInstance(elemModal);
+      instance2.open();
 
       function getLatLngs() {
       	const arr = [];
@@ -180,10 +194,9 @@
 
 
       function initMap() {
-        var location ={lat: 59.3446116, lng: 18.0508528},
         map = new google.maps.Map(document.getElementById('map'), {
-          center: location,
-          zoom: 15
+          center: {lat: 60.9, lng: 18.0},
+          zoom: 5
         });
 
         var drawingManager = new google.maps.drawing.DrawingManager({
