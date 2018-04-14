@@ -1,0 +1,680 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.723208347181576,
+          58.34138487752562
+        ]
+      },
+      "properties": {
+        "IDNR": "1255",
+        "STARTTID": "04-JUL-2016",
+        "SLUTTID": "01-JUL-2018",
+        "PLATS": "Bl\u00e5eldsv\u00e4gen",
+        "TFN": "2016-1325",
+        "BESKRIVNING": "Byggtrafik",
+        "TYP": "Infrastrukturprojekt",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "192357.10",
+        "Y_SWEREF991500": "6469533.89"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.616855061973517,
+          58.419142408045595
+        ]
+      },
+      "properties": {
+        "IDNR": "1258",
+        "STARTTID": "04-JUL-2016",
+        "SLUTTID": "31-DEC-2018",
+        "PLATS": "Agraffen, Sveag.",
+        "TFN": "2016-1326",
+        "BESKRIVNING": "Rivning Priso mm",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186048.88",
+        "Y_SWEREF991500": "6478132.63"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.723583868923566,
+          58.34139586364939
+        ]
+      },
+      "properties": {
+        "IDNR": "1267",
+        "STARTTID": "06-JUL-2016",
+        "SLUTTID": "30-NOV-2018",
+        "PLATS": "Bl\u00e5eldsv\u00e4gen",
+        "TFN": "2016-1366",
+        "BESKRIVNING": "byggtrafik",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "192379.08",
+        "Y_SWEREF991500": "6469535.35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.63786134102885,
+          58.39966846773989
+        ]
+      },
+      "properties": {
+        "IDNR": "1495",
+        "STARTTID": "14-NOV-2016",
+        "SLUTTID": "30-JUN-2018",
+        "PLATS": "Bockhornsv.",
+        "TFN": "2016-2129",
+        "BESKRIVNING": "Spr\u00e4ngning/rivning",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C2",
+        "LINK_URL": null,
+        "X_SWEREF991500": "187297.03",
+        "Y_SWEREF991500": "6475975.04"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.58687907478557,
+          58.40884092130714
+        ]
+      },
+      "properties": {
+        "IDNR": "1537",
+        "STARTTID": "01-DEC-2016",
+        "SLUTTID": "31-MAY-2018",
+        "PLATS": "Hanekindsgatan",
+        "TFN": "2016-2279",
+        "BESKRIVNING": "Husbyggnation",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C3",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184307.13",
+        "Y_SWEREF991500": "6476969.55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.58687907478557,
+          58.40884092130714
+        ]
+      },
+      "properties": {
+        "IDNR": "1537",
+        "STARTTID": "01-DEC-2016",
+        "SLUTTID": "31-MAY-2018",
+        "PLATS": "Hanekindsgatan",
+        "TFN": "2016-2279",
+        "BESKRIVNING": "Husbyggnation",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C3",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184307.13",
+        "Y_SWEREF991500": "6476969.55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.634170564519193,
+          58.411368867650175
+        ]
+      },
+      "properties": {
+        "IDNR": "1581",
+        "STARTTID": "01-JAN-2017",
+        "SLUTTID": "31-DEC-2018",
+        "PLATS": "Nya Tanneforsv\u00e4gen",
+        "TFN": "2016-2214",
+        "BESKRIVNING": "Nyproduktion av bost\u00e4der. Avst\u00e4ngd g\u00e5ng- och cykelbana.",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "187068.94",
+        "Y_SWEREF991500": "6477276.21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.616464591267668,
+          58.40660563524471
+        ]
+      },
+      "properties": {
+        "IDNR": "1657",
+        "STARTTID": "07-FEB-2017",
+        "SLUTTID": "15-MAY-2018",
+        "PLATS": "Barnhemsgatan 15",
+        "TFN": "2017-304",
+        "BESKRIVNING": "Renovering av fastighet",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "0,60",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186038.86",
+        "Y_SWEREF991500": "6476736.05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.612499795327297,
+          58.40887312519395
+        ]
+      },
+      "properties": {
+        "IDNR": "1734",
+        "STARTTID": "15-MAR-2017",
+        "SLUTTID": "30-JUN-2018",
+        "PLATS": "Storgatan",
+        "TFN": "2017-410",
+        "BESKRIVNING": "Ombyggnation av gata inkl. Va, fj\u00e4rrv\u00e4rme och kabelarbete",
+        "TYP": "Infrastrukturprojekt",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "0,50",
+        "ROADSIGN": "C2",
+        "LINK_URL": null,
+        "X_SWEREF991500": "185804.78",
+        "Y_SWEREF991500": "6476986.49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.578667742065681,
+          58.42805974004743
+        ]
+      },
+      "properties": {
+        "IDNR": "1920",
+        "STARTTID": "31-JUL-2017",
+        "SLUTTID": "02-DEC-2018",
+        "PLATS": "Sk\u00e4ggetorpsskolan",
+        "TFN": "2017-1697",
+        "BESKRIVNING": "Byggtrafik i samband med byggnation av Allaktivitetshuset",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": null,
+        "LINK_URL": null,
+        "X_SWEREF991500": "183808.71",
+        "Y_SWEREF991500": "6479106.03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.624154106113302,
+          58.41319947664943
+        ]
+      },
+      "properties": {
+        "IDNR": "1965",
+        "STARTTID": "01-AUG-2017",
+        "SLUTTID": "01-JUN-2019",
+        "PLATS": "Kungsgatan 18",
+        "TFN": "2017-2542",
+        "BESKRIVNING": "Husbyggnation. Kungsgatan enkelriktad mellan Repslagaregatan och S:t Larsgatan, infart Repslagaregatan.",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,80",
+        "FRAMKOMLIGHET_BIL": "0,80",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186481.57",
+        "Y_SWEREF991500": "6477474.63"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.609349343879519,
+          58.39473790490149
+        ]
+      },
+      "properties": {
+        "IDNR": "1981",
+        "STARTTID": "22-AUG-2017",
+        "SLUTTID": "01-SEP-2018",
+        "PLATS": "Haningeleden/Kunskapsl\u00e4nken",
+        "TFN": "2017-1888",
+        "BESKRIVNING": "Breddning av bro \u00d6ver Haningeleden.",
+        "TYP": "Infrastrukturprojekt",
+        "FRAMKOMLIGHET_CYKEL": "0,80",
+        "FRAMKOMLIGHET_BIL": "0,80",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "185634.88",
+        "Y_SWEREF991500": "6475410.41"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.720406894202847,
+          58.33771687846629
+        ]
+      },
+      "properties": {
+        "IDNR": "2017",
+        "STARTTID": "05-APR-2017",
+        "SLUTTID": "05-APR-2019",
+        "PLATS": "Bj\u00f6rkforsv\u00e4gen \"ICA\"",
+        "TFN": "2017-765",
+        "BESKRIVNING": "Nybyggnation av hus",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "0,50",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "192197.40",
+        "Y_SWEREF991500": "6469123.59"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.627540746921115,
+          58.40348440835179
+        ]
+      },
+      "properties": {
+        "IDNR": "2042",
+        "STARTTID": "30-AUG-2017",
+        "SLUTTID": "21-DEC-2018",
+        "PLATS": "Rosengatan",
+        "TFN": "2017-2062",
+        "BESKRIVNING": "Husbyggnation",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,90",
+        "FRAMKOMLIGHET_BIL": "0,90",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186689.61",
+        "Y_SWEREF991500": "6476394.39"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.625345874001889,
+          58.393022587786746
+        ]
+      },
+      "properties": {
+        "IDNR": "2048",
+        "STARTTID": "21-AUG-2017",
+        "SLUTTID": "31-DEC-2020",
+        "PLATS": "G\u00e5ng- ocg cykelbana mellan Rotegatan och Bataljonsgatan",
+        "TFN": "2017-1893",
+        "BESKRIVNING": "G\u00e5ng- och cykelbana avst\u00e4ngd.",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C2",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186572.12",
+        "Y_SWEREF991500": "6475227.94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.622405580913,
+          58.39253332093088
+        ]
+      },
+      "properties": {
+        "IDNR": "2049",
+        "STARTTID": "21-AUG-2017",
+        "SLUTTID": "31-DEC-2020",
+        "PLATS": "Garnisonsv\u00e4gen",
+        "TFN": "2017-1893",
+        "BESKRIVNING": "G\u00e5ng- och cykelbana avst\u00e4ngd p\u00e5 ena sidan.",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "C2",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186400.67",
+        "Y_SWEREF991500": "6475171.85"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.623371810023194,
+          58.39328691755924
+        ]
+      },
+      "properties": {
+        "IDNR": "2050",
+        "STARTTID": "21-AUG-2017",
+        "SLUTTID": "31-DEC-2020",
+        "PLATS": "Bataljonsv\u00e4gen",
+        "TFN": "2017-1893",
+        "BESKRIVNING": "Husbyggnation",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,80",
+        "FRAMKOMLIGHET_BIL": "0,70",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186456.40",
+        "Y_SWEREF991500": "6475256.31"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.602963621697668,
+          58.40388054813168
+        ]
+      },
+      "properties": {
+        "IDNR": "2100",
+        "STARTTID": "11-SEP-2017",
+        "SLUTTID": "28-SEP-2018",
+        "PLATS": "Ebbepark",
+        "TFN": "2017-2216",
+        "BESKRIVNING": "Nybyggnation",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "185252.32",
+        "Y_SWEREF991500": "6476425.37"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.619499370415765,
+          58.4084887065749
+        ]
+      },
+      "properties": {
+        "IDNR": "2105",
+        "STARTTID": "18-SEP-2017",
+        "SLUTTID": "01-JUL-2021",
+        "PLATS": "Kvarteret Eddan",
+        "TFN": "2017-2132",
+        "BESKRIVNING": "Nybyggnation",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186214.34",
+        "Y_SWEREF991500": "6476947.42"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.680779024504535,
+          58.379911265346756
+        ]
+      },
+      "properties": {
+        "IDNR": "2177",
+        "STARTTID": "16-OCT-2017",
+        "SLUTTID": "15-JUN-2018",
+        "PLATS": "Ekhoolmen centrum",
+        "TFN": "2017-2504",
+        "BESKRIVNING": "Om- och tillbyggnation av Willys",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,70",
+        "FRAMKOMLIGHET_BIL": "0,70",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "189828.73",
+        "Y_SWEREF991500": "6473799.06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.677743816379355,
+          58.43147579654408
+        ]
+      },
+      "properties": {
+        "IDNR": "2300",
+        "STARTTID": "11-DEC-2017",
+        "SLUTTID": "30-APR-2018",
+        "PLATS": "Gr\u00e4nsliden",
+        "TFN": "2017-2918",
+        "BESKRIVNING": "Byggnation av g\u00e5ng- och cykelv\u00e4g.",
+        "TYP": "Infrastrukturprojekt",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "0,90",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "189593.29",
+        "Y_SWEREF991500": "6479540.59"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.585632108345624,
+          58.40988996970887
+        ]
+      },
+      "properties": {
+        "IDNR": "2319",
+        "STARTTID": "30-DEC-2017",
+        "SLUTTID": "30-APR-2019",
+        "PLATS": "Industrigatan",
+        "TFN": "2017-2521",
+        "BESKRIVNING": "Tillf\u00e4llig in- och utfart fr\u00e5n byggarbetsplats till Industrigatan.",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184233.22",
+        "Y_SWEREF991500": "6477085.76"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.617402083638757,
+          58.417526049885744
+        ]
+      },
+      "properties": {
+        "IDNR": "2329",
+        "STARTTID": "09-JAN-2018",
+        "SLUTTID": "01-JAN-2020",
+        "PLATS": "Platensgatan 27",
+        "TFN": "2018-9",
+        "BESKRIVNING": "Rivning och nyproduktion av hus",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "0,50",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186082.50",
+        "Y_SWEREF991500": "6477952.89"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.580917873555903,
+          58.39217796716092
+        ]
+      },
+      "properties": {
+        "IDNR": "2410",
+        "STARTTID": "19-FEB-2018",
+        "SLUTTID": "01-MAY-2019",
+        "PLATS": "Integrationen 9-11, Vallastaden",
+        "TFN": "2018-298",
+        "BESKRIVNING": "Nybyggnation av bost\u00e4der",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "183974.69",
+        "Y_SWEREF991500": "6475110.57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.590484449691479,
+          58.41279420500237
+        ]
+      },
+      "properties": {
+        "IDNR": "2421",
+        "STARTTID": "19-FEB-2018",
+        "SLUTTID": "30-APR-2018",
+        "PLATS": "Stenbr\u00f6tsskolan, Tornhagsskolan",
+        "TFN": "2018-344",
+        "BESKRIVNING": "Ombyggnation av skola. \u00d6verg\u00e5ngsst\u00e4lle flyttat.",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184514.02",
+        "Y_SWEREF991500": "6477411.72"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.609198314428506,
+          58.41918100107514
+        ]
+      },
+      "properties": {
+        "IDNR": "2452",
+        "STARTTID": "01-JAN-2014",
+        "SLUTTID": "01-AUG-2019",
+        "PLATS": "\u00d6vre Vasastaden",
+        "TFN": "2015-1687",
+        "BESKRIVNING": "Nybyggnation. Delar av Sl\u00f6jdgatan \u00e4r avst\u00e4ngd.",
+        "TYP": "Husbyggnation",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "185601.39",
+        "Y_SWEREF991500": "6478132.85"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.691199749750071,
+          58.37367772289198
+        ]
+      },
+      "properties": {
+        "IDNR": "2489",
+        "STARTTID": "16-APR-2018",
+        "SLUTTID": "20-DEC-2018",
+        "PLATS": "V\u00e5rdsbergsv\u00e4gen/Brokindsleden",
+        "TFN": "2018-753",
+        "BESKRIVNING": "Byggnation av g\u00e5ng- och cykeltunnel samt ny g\u00e5ng- och cykelv\u00e4g. V\u00e4gtrafik kommer att ledas p\u00e5 en tillf\u00e4llig v\u00e4g under delar av projektet.",
+        "TYP": "Infrastrukturprojekt",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "190445.51",
+        "Y_SWEREF991500": "6473110.98"
+      }
+    }
+  ]
+}
