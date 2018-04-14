@@ -118,7 +118,17 @@
           </a>
           <ul>
             <li><a class="btn-floating red"><i class="material-icons">call</i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons">reorder</i></a></li>
+            <li><a class="btn-floating blue modal-trigger" href="#modal1"><i class="material-icons">reorder</i></a></li>
+            <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
           </ul>
         </div>
 
@@ -143,6 +153,11 @@
         var instance = M.FloatingActionButton.init(elem, {
           direction: 'left'
       });
+
+       var elemModal = document.querySelector('.modal');
+      var instance2 = M.Modal.init(elemModal, options);
+      instance2 = M.Modal.getInstance(elem);
+
 
       instance.open();
 
