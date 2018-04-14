@@ -194,9 +194,10 @@
 
 
       function initMap() {
+        var location ={lat: 59.3446116, lng: 18.0508528};
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 60.9, lng: 18.0},
-          zoom: 5
+          center: location,
+          zoom: 15
         });
 
         var drawingManager = new google.maps.drawing.DrawingManager({
