@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -18,7 +18,7 @@
        html, body {
        	width:100vw;
        	height:100vh;
-        background-color: rgb(180, 202, 124)
+        background-color: #D6E7AB
        }
        #map {
         height: 80vh;
@@ -41,17 +41,6 @@
       span {
         font-weight: 400;
         color:white;
-      }
-      /* label color */
-      .input-field label {
-     color: white;
-      }
-      i {
-        opacity: .6;
-      }
-      #report {
-        display:block;
-        margin-top: 30px;
       }
 
     </style>
@@ -96,32 +85,12 @@
 
           <div class="row">
             <div class="input-field col s12">
-                <i class="material-icons prefix">email</i>
               <input id="email" type="email" class="validate">
               <label for="email">Email</label>
             </div>
           </div>
 
-          <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">phone</i>
-              <input id="phone" type="text" class="validate" data-length="14">
-              <label for="phone">Phone Number</label>
-            </div>
-          </div>
-
-      <button type="button" class="btn btn-default" onclick="submitToserver()">Subscribe</button>
-
-      <div class="fixed-action-btn">
-          <a class="btn-floating btn-large red">
-            <i class="large material-icons">mode_edit</i>
-          </a>
-          <ul>
-            <li><a class="btn-floating red"><i class="material-icons">call</i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons">reorder</i></a></li>
-          </ul>
-        </div>
-
+      <button type="button" class="btn btn-default" onclick="submitToserver()">Default</button>
      </div>
 
 
@@ -138,14 +107,6 @@
       // This example requires the Drawing library. Include the libraries=drawing
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
-
-       var elem = document.querySelector('.fixed-action-btn');
-        var instance = M.FloatingActionButton.init(elem, {
-          direction: 'left'
-      });
-
-      instance.open();
-
 
       function getLatLngs() {
       	const arr = [];
@@ -165,8 +126,9 @@
 
 
       function initMap() {
+        var locationRio = {lat:59.3413837, lng:18.0640699};
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 60.9, lng: 18.0},
+          center: locationRio,
           zoom: 5
         });
 
