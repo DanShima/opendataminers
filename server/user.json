@@ -7,20 +7,26 @@
                 "lng": 15.625365,
                 "types": [
                     "Police",
-                    "Trafik",
-                    "Roadworks"
+                    "Traffic",
+                    "Roadworks",
+                    "PSA",
+                    "Infrastructure"
                 ],
-                "radius": 1000
+                "radius": 500,
+                "smhiID": "039"
             },
             {
-                "lat": 58.408471,
-                "lng": 15.625365,
+                "lat": 58.428471,
+                "lng": 15.5665,
                 "types": [
                     "Police",
-                    "Trafik",
-                    "Roadworks"
+                    "Traffic",
+                    "Roadworks",
+                    "PSA",
+                    "Infrastructure"
                 ],
-                "radius": 500
+                "radius": 500,
+                "smhiID": "039"
             }
         ],
         "phoneNumber": "+46722003579",

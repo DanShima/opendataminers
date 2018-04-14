@@ -29,6 +29,8 @@
       <button class='btn-large' id="scenarioett">Scenario 1</button>
       <button class='btn-large' id="scenariotva">Scenario 2</button>
       <button class='btn-large' id="scenariotre">Scenario 3</button>
+      <button class='btn-large' id="scenariofyra">Scenario 4</button>
+      <button class='btn-large' id="scenariofem">Scenario 5</button>
     </div>
     <button class="btn" id="addNewUser">
       Add new user
@@ -50,8 +52,8 @@
     addnewuser.addEventListener('click', (e) => {
       axios.post(`http://localhost:3000/adduser`, {
         data: {
-          addresses: JSON.stringify([{lat: 58.408471, long: 15.625365}, {lat: 58.408471, long: 15.625365}]),
-          types: JSON.stringify(['Police', 'Trafik', "Roadworks"]),
+          addresses: JSON.stringify([{lat: 58.408471, long: 15.625365}, {lat: 58.428471, long: 15.5665}]),
+          types: JSON.stringify(['Police', 'Traffic', "Roadworks", "PSA", "Infrastructure"]),
           radius: 500,
           phoneNumber: '+46722003579'
         }

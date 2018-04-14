@@ -6,8 +6,9 @@ const haversine = require('haversine');
 const fs = require('fs');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const inside = require('point-in-polygon');
 
- 
+var polygon = [ [ 1, 1 ], [ 1, 2 ], [ 2, 2 ], [ 2, 1 ] ];
 
 const username = 'u479f7a38ac85b8df93b44a266dea8b22';
 const password = '68B948E908B479EBCBB01272A272A261';
@@ -120,8 +121,42 @@ app.get('/scenariotva', (req,res) => {
 app.get('/scenariotre', (req,res) => {
   var objs = {}
   const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
-  objs['Trafik'] = JSON.parse(fs.readFileSync('../client/trafikverket.geojson', 'utf8'));
+  objs['Traffic'] = JSON.parse(fs.readFileSync('../client/trafikverket.geojson', 'utf8'));
   const result = superduperfunction(objs, 'Id', 'Message', users);
+  res.send('' +result);
+});
+
+app.get('/scenariofyra', (req,res) => {
+  let objs;
+  let msgs = [];
+  const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
+  objs = JSON.parse(fs.readFileSync('../client/SMHIwarnings.json', 'utf8'));
+  users.forEach(user => {
+    user.subscribedAddresses.forEach(specificAddress => {
+      objs.some(healthEvent => {
+        // Use some and return to only send 1 SMS
+        if(specificAddress.smhiID === healthEvent.area) {
+          // Store messages sent to not send duplicates
+          let msg = healthEvent.description;
+          // check for duplicates
+          if (msgs.indexOf(msg) > -1) {
+            return true;
+          } else {
+            msgs.push(msg)
+            console.log(healthEvent.description);
+            return true;
+          }
+
+        }
+      });
+    });
+  });
+});
+app.get('/scenariofem', (req,res) => {
+  var objs = {}
+  const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
+  objs['Infrastructure'] = JSON.parse(fs.readFileSync('../client/infrastruktur.geojson', 'utf8'));
+  const result = superduperfunction(objs, 'IDNR', 'BESKRIVNING', users);
   res.send('' +result);
 });
 
@@ -130,13 +165,25 @@ app.post('/adduser', (req, res) => {
   console.log(req.body.data);
   const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
   const newArray = [];
+  const SMHIAreas = JSON.parse(fs.readFileSync('../client/SMHIareas.json', 'utf8'));
+  
   for(let i = 0; i < addresses.length; i++) {
+    let smhiID = ''
+
+    for(let key in SMHIAreas) {
+      const polygon = SMHIAreas[key][0];
+      if (inside([addresses[i].lat, addresses[i].long], polygon)) {
+        smhiID = key;
+        break;
+      }
+    }
     newArray.push(
       {
         lat: addresses[i].lat, 
         lng: addresses[i].long, 
         types: JSON.parse(req.body.data.types), 
-        radius: req.body.data.radius
+        radius: req.body.data.radius,
+        smhiID,
       }
     );
   }
@@ -188,7 +235,9 @@ superduperfunction = (objs, id, title, users) => {
     // console.log(user);
     user.subscribedAddresses.forEach(specificAddress => {
       for (var key in objs) {
-
+        let count = 0;
+        let radius = key === 'Traffic' ? 3000 : specificAddress.radius;
+        
         if (specificAddress.types.indexOf(key) == -1) {continue;}
 
         objs[key].features.forEach(f => {
@@ -202,13 +251,14 @@ superduperfunction = (objs, id, title, users) => {
           }
           // console.log(haversine([specificAddress.lat, specificAddress.long], reversed));
           result = haversine(regular, reversed, {unit: 'meter'});
-          if (result <= specificAddress.radius) {
-            if(user.new[key].indexOf(f.properties[id].toString()) > -1) {
+          if (result <= radius) {
               let message = `En händelse har hänt! Från ${Math.round(result)} meter från din sparade adress. Händelsen är: ${f.properties[title]}`;
               console.log(message);
               // console.log(f.properties[id]);
-              // phoneOptions(user.phoneNumber, message);
-            }
+              if (count === 0) {
+                phoneOptions(user.phoneNumber, message);
+              }
+              count++;
             // console.log(f.properties[id]);
           }
         });
