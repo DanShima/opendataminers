@@ -207,7 +207,7 @@ superduperfunction = (objs, id, title, users) => {
               let message = `En händelse har hänt! Från ${Math.round(result)} meter från din sparade adress. Händelsen är: ${f.properties[title]}`;
               console.log(message);
               // console.log(f.properties[id]);
-              phoneOptions(user.phoneNumber, message);
+              // phoneOptions(user.phoneNumber, message);
             }
             // console.log(f.properties[id]);
           }
