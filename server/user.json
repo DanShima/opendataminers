@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "subscribedAddresses": [
+            {
+                "lat": 58.408471,
+                "lng": 15.625365,
+                "types": [
+                    "Police",
+                    "Trafik",
+                    "Roadworks"
+                ],
+                "radius": 1000
+            },
+            {
+                "lat": 58.408471,
+                "lng": 15.625365,
+                "types": [
+                    "Police",
+                    "Trafik",
+                    "Roadworks"
+                ],
+                "radius": 500
+            }
+        ],
+        "phoneNumber": "+46722003579",
+        "new": {
+            "Roadworks": [
+                "2457"
+            ],
+            "Police": [
+                "37891"
+            ],
+            "Trafik": [
+                "SE_STA_TRISSID_1_13329739"
+            ]
+        }
+    }
+]

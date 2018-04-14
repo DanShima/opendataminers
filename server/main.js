@@ -4,7 +4,8 @@ const express = require('express');
 const app = express();
 const haversine = require('haversine');
 const fs = require('fs');
-
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
  
 
@@ -22,7 +23,9 @@ const options = {
     }
 };
 
-
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // const callback = function(response) {
@@ -45,60 +48,122 @@ const options = {
 // // Finish sending the request.
 // request.end();
 
-const users = [
-  {
-    id: 1, 
-    subscribedAddresses: [
-      { 
-        lat: 58.408471, 
-        long: 15.625365, 
-        attribute: 'Home', 
-        types: [
-          'Crimes', 'Roadworks', 'Asteroids',
-        ],
-        radius: 1000,
-      }
-    ],
-    phoneNumber: '+46722003579',
-    new: {
-      Roadworks: ["2457"],
-      Police: []
+// const users = [
+//   {
+//     id: 1, 
+//     subscribedAddresses: [
+//       { 
+//         lat: 58.408471, 
+//         long: 15.625365, 
+//         attribute: 'Home', 
+//         types: [
+//           'Crimes', 'Roadworks', 'Asteroids', "Trafik", "Police"
+//         ],
+//         radius: 4000,
+//       }
+//     ],
+//     phoneNumber: '+46722003579',
+//     new: {
+//       Roadworks: ["2457"],
+//       Police: ["37891"],
+//       Trafik: ['SE_STA_TRISSID_1_13329739']
+//     }
+//   },
+//   {
+//     id: 2,
+//     subscribedAddresses: [
+//       { 
+//         lat: 58.408471, 
+//         long: 15.625365, 
+//         attribute: 'Home', 
+//         types: [
+//           'Crimes', 'Roadworks', 'Asteroids', "Police", "Trafik"
+//         ],
+//         radius: 400,
+//       }
+//     ],
+//     phoneNumber: '+46725534687',
+//     new: {
+//       Roadworks: [],
+//       Police: [],
+//       Trafik: []
+//     }
+//   }
+// ];
+app.get('/json', (req,res) => {
+  fs.writeFile('user.json', JSON.stringify(users, null, 4), err => {
+    if(err) {
+      return console.log(err);
+    } else {
+      console.log("it worked");
     }
-  },
-  {
-    id: 2,
-    subscribedAddresses: [
-      { 
-        lat: 58.408471, 
-        long: 15.625365, 
-        attribute: 'Home', 
-        types: [
-          'Crimes', 'Roadworks', 'Asteroids', "Police"
-        ],
-        radius: 400,
-      }
-    ],
-    phoneNumber: '+46725534687',
-    new: {
-      Roadworks: ["2457"],
-      Police: ["40710"]
-    }
-  }
-];
+  });
+});
 //Loop through users - If event is within your radius, send text based on your type.
 app.get('/scenarioett', (req,res) => {
   //Scenario 1 innebär ett larm från polisen - ett mord har hänt.
   var objs = {}
+  const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
   objs['Roadworks'] = JSON.parse(fs.readFileSync('../client/vagarbate.geojson', 'utf8'));
-  const result = superduperfunction(objs, 'IDNR', 'BESKRIVNING');
+  const result = superduperfunction(objs, 'IDNR', 'BESKRIVNING', users);
   res.send('' +result);
 });
 
 app.get('/scenariotva', (req,res) => {
   var objs = {}
+  const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
   objs['Police'] = JSON.parse(fs.readFileSync('../client/policedata2.geojson', 'utf8'));
-  const result = superduperfunction(objs, 'id', 'summary');
+  const result = superduperfunction(objs, 'id', 'summary', users);
   res.send('' +result);
+});
+
+app.get('/scenariotre', (req,res) => {
+  var objs = {}
+  const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
+  objs['Trafik'] = JSON.parse(fs.readFileSync('../client/trafikverket.geojson', 'utf8'));
+  const result = superduperfunction(objs, 'Id', 'Message', users);
+  res.send('' +result);
+});
+
+app.post('/adduser', (req, res) => {
+  const addresses = JSON.parse(req.body.data.addresses);
+  console.log(req.body.data);
+  const users = JSON.parse(fs.readFileSync('user.json', 'utf8'));
+  const newArray = [];
+  for(let i = 0; i < addresses.length; i++) {
+    newArray.push(
+      {
+        lat: addresses[i].lat, 
+        lng: addresses[i].long, 
+        types: JSON.parse(req.body.data.types), 
+        radius: req.body.data.radius
+      }
+    );
+  }
+  const obj = {
+    id: users.length+1,
+    subscribedAddresses: newArray,
+    phoneNumber: req.body.data.phoneNumber,
+    new: {
+      Roadworks: [
+          "2457"
+      ],
+      Police: [
+          "37891"
+      ],
+      Trafik: [
+          "SE_STA_TRISSID_1_13329739"
+      ]
+    }
+  };
+  users.push(obj);
+  fs.writeFile('user.json', JSON.stringify(users, null, 4), err => {
+    if(err) {
+      console.log(err);
+    } else {
+      console.log("New user added");
+    }
+  });
 });
 
 phoneOptions = (number, message) => {
@@ -117,9 +182,10 @@ phoneOptions = (number, message) => {
 
 app.listen('3000', () => console.log('Server is stared on port 3000'));
 
-superduperfunction = (objs, id, title) => {
+superduperfunction = (objs, id, title, users) => {
   let result;
   users.forEach(user => {
+    // console.log(user);
     user.subscribedAddresses.forEach(specificAddress => {
       for (var key in objs) {
 
@@ -132,18 +198,18 @@ superduperfunction = (objs, id, title) => {
           };
           const regular = {
             latitude: specificAddress.lat,
-            longitude: specificAddress.long
+            longitude: specificAddress.lng
           }
           // console.log(haversine([specificAddress.lat, specificAddress.long], reversed));
           result = haversine(regular, reversed, {unit: 'meter'});
           if (result <= specificAddress.radius) {
             if(user.new[key].indexOf(f.properties[id].toString()) > -1) {
-              let message = `En händelse har hänt! Från ${result} meter från din sparade adress. Händelsen är: ${f.properties[title]}`;
+              let message = `En händelse har hänt! Från ${Math.round(result)} meter från din sparade adress. Händelsen är: ${f.properties[title]}`;
               console.log(message);
-              console.log(f.properties[id]);
+              // console.log(f.properties[id]);
               phoneOptions(user.phoneNumber, message);
             }
-            console.log(f.properties[id]);
+            // console.log(f.properties[id]);
           }
         });
       }
