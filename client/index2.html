@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>What happens next to you?</title>
+  <style>
+    html, body {
+      width: 100vw;
+      height: 100vh;
+    }
+    #super-container {
+      margin: 0 auto;
+      width: 60%;
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="super-container">
+    <h2>What happens next to you?</h2>
+    <div id="btn-collection">
+      <button class='btn-large' id="scenarioett">Scenario 1</button>
+      <button class='btn-large' id="scenariotva">Scenario 2</button>
+      <button class='btn-large' id="scenariotre">Scenario 3</button>
+    </div>
+    <button class="btn" id="addNewUser">
+      Add new user
+    </button>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <script>
+    const scen1 = document.getElementsByClassName('btn-large');
+    const addnewuser = document.getElementById('addNewUser');
+    // console.log(scen1.length);
+    for(let i = 0; i < scen1.length; i++) {
+      scen1[i].addEventListener('click', e => {
+        axios.get(`http://localhost:3000/${e.target.getAttribute('id')}`)
+          .then(() => {
+            alert(`${e.target.getAttribute('id')} called`);
+          });
+      });
+    }
+    addnewuser.addEventListener('click', (e) => {
+      axios.post(`http://localhost:3000/adduser`, {
+        data: {
+          addresses: JSON.stringify([{lat: 58.408471, long: 15.625365}, {lat: 58.408471, long: 15.625365}]),
+          types: JSON.stringify(['Police', 'Trafik', "Roadworks"]),
+          radius: 500,
+          phoneNumber: '+46722003579'
+        }
+      }).then(() => alert('New user added'));
+    });
+    // scen1.forEach(element => {
+    //   element.addEventListener('click', e => {
+    //     console.log(e.target);
+    //   });
+    // });
+  </script>
+</body>
+</html>
