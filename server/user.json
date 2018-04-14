@@ -41,5 +41,37 @@
                 "SE_STA_TRISSID_1_13329739"
             ]
         }
+    },
+    {
+        "id": 2,
+        "subscribedAddresses": [],
+        "phoneNumber": "",
+        "new": {
+            "Roadworks": [
+                "2457"
+            ],
+            "Police": [
+                "37891"
+            ],
+            "Trafik": [
+                "SE_STA_TRISSID_1_13329739"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "subscribedAddresses": [],
+        "phoneNumber": "",
+        "new": {
+            "Roadworks": [
+                "2457"
+            ],
+            "Police": [
+                "37891"
+            ],
+            "Trafik": [
+                "SE_STA_TRISSID_1_13329739"
+            ]
+        }
     }
 ]
