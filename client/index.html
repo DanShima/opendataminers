@@ -141,7 +141,8 @@
           <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+          <button class="btn waves-effect waves-light" type="submit" name="action" onclick="sendMail()">Send</button>
         </div>
       </div>
         </div>
@@ -163,18 +164,26 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
 
+      /* set up floating action button */
        var elem = document.querySelector('.fixed-action-btn');
         var instance = M.FloatingActionButton.init(elem, {
           direction: 'left'
       });
       instance.open();
-
+      /* set up modal trigger */
       var elemModal = document.querySelector('.modal');
       var instance2 = M.Modal.init(elemModal, {
-        opacity: 0.1
+        opacity: 0
       });
       instance2 = M.Modal.getInstance(elemModal);
       instance2.open();
+
+      // FIXME
+      function sendMail() {
+	    $myform = $('#modal1');
+	    $myform.prop ('action','mailto:danning@kivra.com');
+	    $myform.submit();
+      }
 
       function getLatLngs() {
       	const arr = [];
