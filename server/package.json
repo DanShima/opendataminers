@@ -1,0 +1,23 @@
+{
+  "name": "opendataminers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanShima/opendataminers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanShima/opendataminers/issues"
+  },
+  "homepage": "https://github.com/DanShima/opendataminers#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "haversine": "^1.1.0"
+  }
+}
