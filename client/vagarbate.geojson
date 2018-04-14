@@ -1,0 +1,555 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.588626524057952,
+          58.40388444790303
+        ]
+      },
+      "properties": {
+        "IDNR": "2225",
+        "STARTTID": "06-NOV-2017",
+        "SLUTTID": "01-MAY-2018",
+        "PLATS": "G\u00e5ng- och cykelv\u00e4g genom Vallaskogen.",
+        "TFN": "2017-2579",
+        "BESKRIVNING": "Ledningsarbete i g\u00e5ng- och cykelv\u00e4g. G\u00e5ende och cyklister leds om.",
+        "TYP": "Gr\u00e4vning",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": null,
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184414.11",
+        "Y_SWEREF991500": "6476418.38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.703462581403684,
+          58.36812372554218
+        ]
+      },
+      "properties": {
+        "IDNR": "2339",
+        "STARTTID": "27-MAR-2018",
+        "SLUTTID": "20-APR-2018",
+        "PLATS": "Piongatan 17",
+        "TFN": "2018-91",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rmejobb. Arbetet kommer att ta 2-4 dagar.",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "0,80",
+        "FRAMKOMLIGHET_BIL": "0,80",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "191169.52",
+        "Y_SWEREF991500": "6472499.81"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.632372279903189,
+          58.47024669755841
+        ]
+      },
+      "properties": {
+        "IDNR": "2367",
+        "STARTTID": "05-APR-2018",
+        "SLUTTID": "05-MAY-2018",
+        "PLATS": "Rox\u00e4ngsv\u00e4gen 5",
+        "TFN": "2018-160",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rme",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "0,60",
+        "FRAMKOMLIGHET_BIL": "0,60",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186902.15",
+        "Y_SWEREF991500": "6483833.17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.608123565488349,
+          58.42384061732295
+        ]
+      },
+      "properties": {
+        "IDNR": "2369",
+        "STARTTID": "24-JAN-2018",
+        "SLUTTID": "27-APR-2018",
+        "PLATS": "Tyttorpsgatan",
+        "TFN": "2018-180",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rme",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "0,90",
+        "FRAMKOMLIGHET_BIL": "0,90",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "185533.89",
+        "Y_SWEREF991500": "6478651.28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.587730440507848,
+          58.42860478173656
+        ]
+      },
+      "properties": {
+        "IDNR": "2381",
+        "STARTTID": "05-FEB-2018",
+        "SLUTTID": "31-JUL-2018",
+        "PLATS": "Bergsv\u00e4gen/Tornbyv\u00e4gen",
+        "TFN": "2018-182",
+        "BESKRIVNING": "Breddning av bergsv\u00e4gen. Arbete kommer ske vid sidan av befintlig v\u00e4g.",
+        "TYP": "Gr\u00e4vning",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184337.66",
+        "Y_SWEREF991500": "6479171.33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.623697664798282,
+          58.418351634111765
+        ]
+      },
+      "properties": {
+        "IDNR": "2396",
+        "STARTTID": "31-JAN-2018",
+        "SLUTTID": "27-APR-2018",
+        "PLATS": "S\u00f6dra Oskarsgatan",
+        "TFN": "2018-269",
+        "BESKRIVNING": "Provgrop inf\u00f6r fj\u00e4rrkyla",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186449.57",
+        "Y_SWEREF991500": "6478048.24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.586071403299151,
+          58.391917115488326
+        ]
+      },
+      "properties": {
+        "IDNR": "2402",
+        "STARTTID": "05-FEB-2018",
+        "SLUTTID": "15-AUG-2018",
+        "PLATS": "Vallastaden",
+        "TFN": "2018-261",
+        "BESKRIVNING": "Utbyggnad av kulvert",
+        "TYP": "VA-arbete",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184276.34",
+        "Y_SWEREF991500": "6475084.13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.587129873593788,
+          58.39282606222583
+        ]
+      },
+      "properties": {
+        "IDNR": "2403",
+        "STARTTID": "05-FEB-2018",
+        "SLUTTID": "15-AUG-2018",
+        "PLATS": "Vallastaden",
+        "TFN": "2018-261",
+        "BESKRIVNING": "Utbyggnad av kulvert",
+        "TYP": "VA-arbete",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A40",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184337.36",
+        "Y_SWEREF991500": "6475185.91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.698567415769402,
+          58.425272437954845
+        ]
+      },
+      "properties": {
+        "IDNR": "2426",
+        "STARTTID": "26-FEB-2018",
+        "SLUTTID": "20-APR-2018",
+        "PLATS": "Id\u00f6gatan 53",
+        "TFN": "2018-365",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rmeservis",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "0,80",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "190816.94",
+        "Y_SWEREF991500": "6478862.10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.689872064748146,
+          58.39882583835605
+        ]
+      },
+      "properties": {
+        "IDNR": "2427",
+        "STARTTID": "26-FEB-2018",
+        "SLUTTID": "20-APR-2018",
+        "PLATS": "L\u00e5skolvsgatan",
+        "TFN": "2018-352",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rmel\u00e4cka. Arbetet tar 2-4 dagar under aktuell period.",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "1,00",
+        "FRAMKOMLIGHET_BIL": "0,70",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "190339.10",
+        "Y_SWEREF991500": "6475911.20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.622816247523753,
+          58.420348700589614
+        ]
+      },
+      "properties": {
+        "IDNR": "2456",
+        "STARTTID": "19-MAR-2018",
+        "SLUTTID": "29-JUN-2018",
+        "PLATS": "S\u00f6dra Oskarsgatan",
+        "TFN": "2018-582",
+        "BESKRIVNING": "Fj\u00e4rrkyla",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "0,70",
+        "FRAMKOMLIGHET_BIL": "0,70",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186396.00",
+        "Y_SWEREF991500": "6478270.20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.629174029615676,
+          58.410087266154
+        ]
+      },
+      "properties": {
+        "IDNR": "2457",
+        "STARTTID": "19-MAR-2018",
+        "SLUTTID": "29-JUN-2018",
+        "PLATS": "Drottninggatan, Snickaregatan, Magasinsgr\u00e4nd, Nygatan, Storgatan, Hamngatan, \u00c5gatan",
+        "TFN": "2018-568",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rme arbete. V\u00e4ldigt begr\u00e4nsad framkomlighet b\u00e5de f\u00f6r cykel- och biltrafik.",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "0,50",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186778.22",
+        "Y_SWEREF991500": "6477130.72"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.641392662638625,
+          58.406720411058245
+        ]
+      },
+      "properties": {
+        "IDNR": "2458",
+        "STARTTID": "19-MAR-2018",
+        "SLUTTID": "29-JUN-2018",
+        "PLATS": "Nya Tanneforsv\u00e4gen, mellan ladugatan och Tegelbruksgatan",
+        "TFN": "2018-525",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rmearbete l\u00e4ngs Nya Tanneforsv\u00e4gen. I f\u00f6rsta etappen kommer trafiken vara \u00f6ppen i b\u00e5da riktningarna men parkeringsplatserna st\u00e4ngs av.",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "187496.02",
+        "Y_SWEREF991500": "6476762.46"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.50029566521525,
+          58.51204051278456
+        ]
+      },
+      "properties": {
+        "IDNR": "2460",
+        "STARTTID": "19-MAR-2018",
+        "SLUTTID": "04-MAY-2018",
+        "PLATS": "Hjalmar Svenfeltsv\u00e4g",
+        "TFN": "2018-620",
+        "BESKRIVNING": "VA-arbete",
+        "TYP": "VA-arbete",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C3",
+        "LINK_URL": null,
+        "X_SWEREF991500": "179160.25",
+        "Y_SWEREF991500": "6488423.41"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.582888480707334,
+          58.4200249077737
+        ]
+      },
+      "properties": {
+        "IDNR": "2468",
+        "STARTTID": "03-APR-2018",
+        "SLUTTID": "25-MAY-2018",
+        "PLATS": "Tj\u00e4dergatan",
+        "TFN": "2018-686",
+        "BESKRIVNING": "Byte av vattenledningar. Tj\u00e4dergatan avst\u00e4ngd f\u00f6r biltrafik fr\u00e5n ena h\u00e5llet.",
+        "TYP": "VA-arbete",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C3",
+        "LINK_URL": null,
+        "X_SWEREF991500": "184063.06",
+        "Y_SWEREF991500": "6478213.22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.655058555802588,
+          58.419033221864524
+        ]
+      },
+      "properties": {
+        "IDNR": "2470",
+        "STARTTID": "26-MAR-2018",
+        "SLUTTID": "27-APR-2018",
+        "PLATS": "Kallerstadleden",
+        "TFN": "2018-709",
+        "BESKRIVNING": "Breddning av k\u00f6rf\u00e4lt f\u00f6r f\u00f6rb\u00e4ttrad tillg\u00e4nglighet p\u00e5 yttre ring",
+        "TYP": "Gr\u00e4vning",
+        "FRAMKOMLIGHET_CYKEL": null,
+        "FRAMKOMLIGHET_BIL": "0,60",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "188281.56",
+        "Y_SWEREF991500": "6478141.58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.700944191452784,
+          58.37452465283833
+        ]
+      },
+      "properties": {
+        "IDNR": "2471",
+        "STARTTID": "02-APR-2018",
+        "SLUTTID": "31-MAY-2018",
+        "PLATS": "Alpstigen/Ekdalsv\u00e4gen/K\u00e4lls\u00e4tersv\u00e4gen",
+        "TFN": "2018-688",
+        "BESKRIVNING": "F\u00f6rnyelse av vattenledning. Arbetet sker i flera etapper.",
+        "TYP": "VA-arbete",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C3",
+        "LINK_URL": null,
+        "X_SWEREF991500": "191014.71",
+        "Y_SWEREF991500": "6473211.21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.625632026883547,
+          58.407632479070315
+        ]
+      },
+      "properties": {
+        "IDNR": "2476",
+        "STARTTID": "10-APR-2018",
+        "SLUTTID": "04-MAY-2018",
+        "PLATS": "St Larsgatan 43",
+        "TFN": "2018-422",
+        "BESKRIVNING": "Dr\u00e4nering och grundf\u00f6rst\u00e4rkning av fastighet. Ett k\u00f6rf\u00e4lt avst\u00e4ngt.",
+        "TYP": "Gr\u00e4vning",
+        "FRAMKOMLIGHET_CYKEL": "0,50",
+        "FRAMKOMLIGHET_BIL": "0,50",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186573.72",
+        "Y_SWEREF991500": "6476855.37"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.645387908385036,
+          58.41206209785267
+        ]
+      },
+      "properties": {
+        "IDNR": "2477",
+        "STARTTID": "03-APR-2018",
+        "SLUTTID": "17-APR-2018",
+        "PLATS": "Stapelgatan/Vimarkagatan",
+        "TFN": "2018-606",
+        "BESKRIVNING": "Ventilfel",
+        "TYP": "VA-arbete",
+        "FRAMKOMLIGHET_CYKEL": "0,10",
+        "FRAMKOMLIGHET_BIL": "0,00",
+        "ROADSIGN": "C3",
+        "LINK_URL": null,
+        "X_SWEREF991500": "187723.87",
+        "Y_SWEREF991500": "6477359.66"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.653695472831473,
+          58.395626874793415
+        ]
+      },
+      "properties": {
+        "IDNR": "2478",
+        "STARTTID": "03-APR-2018",
+        "SLUTTID": "20-APR-2018",
+        "PLATS": "Uttergatan/\u00c5nestadgatan",
+        "TFN": "2018-771",
+        "BESKRIVNING": "Fibergr\u00e4vning",
+        "TYP": "Gr\u00e4vning",
+        "FRAMKOMLIGHET_CYKEL": "0,80",
+        "FRAMKOMLIGHET_BIL": "0,80",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "188227.24",
+        "Y_SWEREF991500": "6475533.77"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.632062504153112,
+          58.409678374996524
+        ]
+      },
+      "properties": {
+        "IDNR": "2483",
+        "STARTTID": "10-APR-2018",
+        "SLUTTID": "10-MAY-2018",
+        "PLATS": "Drottninggatan/Drottningbron",
+        "TFN": "2018-568",
+        "BESKRIVNING": "Fj\u00e4rrv\u00e4rmearbete i g\u00e5ng- och cykelv\u00e4g",
+        "TYP": "Fj\u00e4rrv\u00e4rmearbete",
+        "FRAMKOMLIGHET_CYKEL": "0,00",
+        "FRAMKOMLIGHET_BIL": "1,00",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "186947.49",
+        "Y_SWEREF991500": "6477086.76"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.638723836173368,
+          58.411355414512464
+        ]
+      },
+      "properties": {
+        "IDNR": "2490",
+        "STARTTID": "18-APR-2018",
+        "SLUTTID": "25-APR-2018",
+        "PLATS": "Stallgatan",
+        "TFN": "2018-878",
+        "BESKRIVNING": "Bel\u00e4ggningsarbete",
+        "TYP": "Asfaltering",
+        "FRAMKOMLIGHET_CYKEL": "0,80",
+        "FRAMKOMLIGHET_BIL": "0,80",
+        "ROADSIGN": "A20",
+        "LINK_URL": null,
+        "X_SWEREF991500": "187335.10",
+        "Y_SWEREF991500": "6477277.23"
+      }
+    }
+  ]
+}
