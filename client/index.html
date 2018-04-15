@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-    <script src="common.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <script src="index.js"></script>
+  <script src="common.js"></script>
 
-    <style>
+  <script src="index.js"></script>
 
-       html, body {
-       	width:100vw;
-       	height:100vh;
-        background-color: rgb(180, 202, 124)
-       }
-       #map {
-        height: 80vh;
-        width: 90%;
-        margin-left: 30px;
-       }
-       h3 {
-        color:white;
-        display: block;
-        font-family: 'Source Sans Pro', sans-serif;
-	      letter-spacing: 5px;
-	      text-align: left;
-	      font-size: 3em;
-	      text-transform: uppercase;
-	      font-weight: 700;
-      }
-      .container {
-        display: inline;
-      }
-      span {
-        font-weight: 400;
-        color:white;
-      }
-      /* label color */
-      .input-field label {
-     color: white;
-      }
-      i {
-        opacity: .6;
-      }
-      #report {
-        display:block;
-        margin-top: 30px;
-      }
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(180, 202, 124)
+    }
+
+    #map {
+      height: 80vh;
+      width: 90%;
+      margin-left: 30px;
+    }
+
+    h3 {
+      color: white;
+      display: block;
+      font-family: 'Source Sans Pro', sans-serif;
+      letter-spacing: 5px;
+      text-align: left;
+      font-size: 3em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .container {
+      display: inline;
+    }
+
+    span {
+      font-weight: 400;
+      color: white;
+    }
+
+    /* label color */
+
+    .input-field label {
+      color: white;
+    }
+
+    i {
+      opacity: .6;
+    }
+
+    #report {
+      display: block;
+      margin-top: 30px;
+    }
 
     .waves-effect {
       position: absolute;
@@ -69,13 +78,14 @@
       top: 0;
       height: 5vh;
     }
+
     #cancelBtn {
       margin-left: 8em;
     }
+
     #submitBtn {
       margin-left: 20px;
     }
-
   </style>
 </head>
 
@@ -122,31 +132,38 @@
             </label>
           </p>
         </form>
-          <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">email</i>
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">phone</i>
-              <input id="phone" type="text" class="validate" data-length="14">
-              <label for="phone">Phone Number</label>
-            </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <input id="phone" type="text" class="validate" data-length="14">
+            <label for="phone">Phone Number</label>
           </div>
+        </div>
 
-          <button type="button" class="btn btn-default" onclick="submitToserver()">Subscribe</button>
+        <button type="button" class="btn btn-default" onclick="submitToserver()">Subscribe</button>
 
-      <div class="fixed-action-btn">
+        <div class="fixed-action-btn">
           <a class="btn-floating btn-large red">
             <i class="large material-icons">mode_edit</i>
           </a>
           <ul>
-            <li><a class="btn-floating red" href="tel:112"><i class="material-icons">call</i></a></li>
-            <li><a class="btn-floating blue modal-trigger" href="#modal1"><i class="material-icons">reorder</i></a>
+            <li>
+              <a class="btn-floating red" href="tel:112">
+                <i class="material-icons">call</i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-floating blue modal-trigger" href="#modal1">
+                <i class="material-icons">reorder</i>
+              </a>
             </li>
           </ul>
           <!-- Modal Structure -->
@@ -190,89 +207,87 @@
             </div>
             <div class="modal-footer">
               <button id="cancelBtn" class="btn modal-action modal-close waves-effect waves-light">Cancel</button>
-              <button id="submitBtn"class="btn waves-effect waves-light" type="submit" name="action" onclick="sendMail()">Send</button>
+              <button id="submitBtn" class="btn waves-effect waves-light" type="submit" name="action" onclick="sendMail()">Send</button>
             </div>
           </div>
         </div>
       </div>
-        </div>
+    </div>
 
-     </div>
+  </div>
 
-    <script>
-      var map;
-      var locations = [];
-      var baseUrl="http://127.0.0.1:3000";
-      var domains=[];
+  <script>
+    var map;
+    var locations = [];
+    var baseUrl = "http://127.0.0.1:3000";
+    var domains = [];
 
-      // This example requires the Drawing library. Include the libraries=drawing
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
+    // This example requires the Drawing library. Include the libraries=drawing
+    // parameter when you first load the API. For example:
+    // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
 
-      /* set up floating action button */
-       var elem = document.querySelector('.fixed-action-btn');
-        var instance = M.FloatingActionButton.init(elem, {
-          direction: 'left'
+    /* set up floating action button */
+    var elem = document.querySelector('.fixed-action-btn');
+    var instance = M.FloatingActionButton.init(elem, {
+      direction: 'left'
+    });
+    instance.open();
+    /* set up modal trigger */
+    var elemModal = document.querySelector('.modal');
+    var instance2 = M.Modal.init(elemModal, {
+      opacity: 0
+    });
+    instance2 = M.Modal.getInstance(elemModal);
+
+    // FIXME
+    function sendMail() {
+      $myform = $('#modal1');
+      $myform.prop('action', 'mailto:danning@kivra.com');
+      $myform.submit();
+    }
+
+    function getLatLngs() {
+      const arr = [];
+      for (i in features) {
+        const lat = features[i].position.lat()
+        const lng = features[i].position.lng()
+        arr.push([lat, lng])
+      }
+      return arr;
+    }
+
+
+    function initMap() {
+      var location = { lat: 59.3446116, lng: 18.0508528 };
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: location,
+        zoom: 15
       });
-      instance.open();
-      /* set up modal trigger */
-      var elemModal = document.querySelector('.modal');
-      var instance2 = M.Modal.init(elemModal, {
-        opacity: 0
+
+      var drawingManager = new google.maps.drawing.DrawingManager({
+        drawingMode: google.maps.drawing.OverlayType.MARKER,
+        drawingControl: true,
+        drawingControlOptions: {
+          position: google.maps.ControlPosition.TOP_CENTER,
+          drawingModes: ['marker',] // 'circle', 'polygon', 'polyline', 'rectangle'
+        },
+        markerOptions: {
+          clickable: true,
+          draggable: true
+        },
       });
-      instance2 = M.Modal.getInstance(elemModal);
+      drawingManager.setMap(map);
 
-      // FIXME
-      function sendMail() {
-	    $myform = $('#modal1');
-	    $myform.prop ('action','mailto:danning@kivra.com');
-	    $myform.submit();
-      }
+      google.maps.event.addListener(drawingManager, 'markercomplete', function (marker) {
+        console.log('Added a marker!')
+        var location = { lat: marker.position.lat(), long: marker.position.lng() };
+        locations.push(location);
+      });
+    }
 
-      function getLatLngs() {
-      	const arr = [];
-      	for (i in features) {
-      		const lat = features[i].position.lat()
-      		const lng = features[i].position.lng()
-      		arr.push([lat,lng])
-      	}
-      	return arr;
-      }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ0bV8tstmI9u3ZxfswjQPGYSWDE8y0mY&libraries=drawing&callback=initMap">
+  </script>
+</body>
 
-
-      function initMap() {
-        var location ={lat: 59.3446116, lng: 18.0508528};
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: location,
-          zoom: 15
-        });
-
-        var drawingManager = new google.maps.drawing.DrawingManager({
-          drawingMode: google.maps.drawing.OverlayType.MARKER,
-          drawingControl: true,
-          drawingControlOptions: {
-            position: google.maps.ControlPosition.TOP_CENTER,
-            drawingModes: ['marker',] // 'circle', 'polygon', 'polyline', 'rectangle'
-          },
-          markerOptions: {
-          	clickable: true,
-          	draggable: true
-          },
-        });
-        drawingManager.setMap(map);
-
-        google.maps.event.addListener(drawingManager, 'markercomplete', function (marker) {
-          console.log('Added a marker!')
-          var location = {lat:marker.position.lat(), long: marker.position.lng()};
-	        locations.push(location);
-	    });
-
-
-
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ0bV8tstmI9u3ZxfswjQPGYSWDE8y0mY&libraries=drawing&callback=initMap">
-    </script>
-  </body>
 </html>
