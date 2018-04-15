@@ -265,7 +265,7 @@ superduperfunction = (objs, id, title, users) => {
               console.log(message);
               // console.log(f.properties[id]);
               if (count === 0) {
-                // phoneOptions(user.phoneNumber, message);
+                phoneOptions(user.phoneNumber, message);
               }
               count++;
             // console.log(f.properties[id]);
