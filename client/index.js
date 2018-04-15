@@ -2,12 +2,12 @@
 
 function submitToserver()
 {
-    
+
     var url = baseUrl  + '/adduser';
     var phoneNumber = $('#phone').val();
     var domains = getAllDomains();
 
-    var subsriptions={
+    var subscriptions={
         data: {
           addresses: JSON.stringify(locations),
           types: JSON.stringify(domains),
@@ -16,7 +16,7 @@ function submitToserver()
      }
     };
 
-pushData(url, subsriptions).then(function(result){
+pushData(url, subscriptions).then(function(result){
     console.log(result);
 });
 }
