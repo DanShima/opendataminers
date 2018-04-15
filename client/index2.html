@@ -35,11 +35,15 @@
     <button class="btn" id="addNewUser">
       Add new user
     </button>
+    <button class="btn" id="removeUsers">
+      Remove users
+    </button>
   </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
   <script>
     const scen1 = document.getElementsByClassName('btn-large');
     const addnewuser = document.getElementById('addNewUser');
+    const removeUsers = document.getElementById('removeUsers');
     // console.log(scen1.length);
     for(let i = 0; i < scen1.length; i++) {
       scen1[i].addEventListener('click', e => {
@@ -58,6 +62,12 @@
           phoneNumber: '+46722003579'
         }
       }).then(() => alert('New user added'));
+    });
+    removeUsers.addEventListener('click', (e) => {
+      axios.get('http://localhost:3000/removeusers')
+      .then(res => {
+        console.log(res.data);
+      });
     });
     // scen1.forEach(element => {
     //   element.addEventListener('click', e => {

@@ -16,9 +16,8 @@ function submitToserver()
      }
     };
 
-pushData(url, subsriptions).then(function(result){
-    console.log(result);
-});
+    pushData(url, subsriptions);
+    window.location.href = "index_landing_page.html";
 }
 
 function getAllDomains()

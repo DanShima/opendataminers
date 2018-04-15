@@ -159,6 +159,15 @@ app.get('/scenariofem', (req,res) => {
   const result = superduperfunction(objs, 'IDNR', 'BESKRIVNING', users);
   res.send('' +result);
 });
+app.get('/removeusers', (req,res) => {
+  fs.writeFile('user.json', JSON.stringify([], null, 4), err => {
+    if(err) {
+      console.log(err);
+    } else {
+      res.send('Users removed')
+    }
+  });
+});
 
 app.post('/adduser', (req, res) => {
   const addresses = JSON.parse(req.body.data.addresses);
@@ -236,7 +245,7 @@ superduperfunction = (objs, id, title, users) => {
     user.subscribedAddresses.forEach(specificAddress => {
       for (var key in objs) {
         let count = 0;
-        let radius = key === 'Traffic' ? 3000 : specificAddress.radius;
+        let radius = key === 'Traffic' ? 500 : specificAddress.radius;
         
         if (specificAddress.types.indexOf(key) == -1) {continue;}
 
@@ -256,7 +265,7 @@ superduperfunction = (objs, id, title, users) => {
               console.log(message);
               // console.log(f.properties[id]);
               if (count === 0) {
-                phoneOptions(user.phoneNumber, message);
+                // phoneOptions(user.phoneNumber, message);
               }
               count++;
             // console.log(f.properties[id]);

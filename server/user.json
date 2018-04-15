@@ -3,8 +3,8 @@
         "id": 1,
         "subscribedAddresses": [
             {
-                "lat": 58.408471,
-                "lng": 15.625365,
+                "lat": 59.35282345983578,
+                "lng": 18.066237182067425,
                 "types": [
                     "Police",
                     "Traffic",
@@ -13,11 +13,11 @@
                     "Infrastructure"
                 ],
                 "radius": 500,
-                "smhiID": "039"
+                "smhiID": "025"
             },
             {
-                "lat": 58.428471,
-                "lng": 15.5665,
+                "lat": 59.35369849236904,
+                "lng": 18.099196166442425,
                 "types": [
                     "Police",
                     "Traffic",
@@ -26,42 +26,10 @@
                     "Infrastructure"
                 ],
                 "radius": 500,
-                "smhiID": "039"
+                "smhiID": ""
             }
         ],
         "phoneNumber": "+46722003579",
-        "new": {
-            "Roadworks": [
-                "2457"
-            ],
-            "Police": [
-                "37891"
-            ],
-            "Trafik": [
-                "SE_STA_TRISSID_1_13329739"
-            ]
-        }
-    },
-    {
-        "id": 2,
-        "subscribedAddresses": [],
-        "phoneNumber": "",
-        "new": {
-            "Roadworks": [
-                "2457"
-            ],
-            "Police": [
-                "37891"
-            ],
-            "Trafik": [
-                "SE_STA_TRISSID_1_13329739"
-            ]
-        }
-    },
-    {
-        "id": 3,
-        "subscribedAddresses": [],
-        "phoneNumber": "",
         "new": {
             "Roadworks": [
                 "2457"
